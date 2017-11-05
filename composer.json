@@ -1,5 +1,5 @@
 {
-    "name": "spatie/laravel-responsecache",
+    "name": "tanagorns/laravel-responsecache",
     "description": "Speed up a Laravel application by caching the entire response",
     "keywords": [
         "spatie",
@@ -9,7 +9,7 @@
         "response",
         "performance"
     ],
-    "homepage": "https://github.com/spatie/laravel-responsecache",
+    "homepage": "https://github.com/tanagorns/laravel-responsecache",
     "license": "MIT",
     "authors": [
         {
