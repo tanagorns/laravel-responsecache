@@ -12,12 +12,12 @@ class ResponseSerializer
 
     public function serialize(Response $response): string
     {
-        return gzcompress(igbinary_serialize($this->getResponseData($response)), 1);
+        return igbinary_serialize($this->getResponseData($response));
     }
 
     public function unserialize(string $serializedResponse): Response
     {
-        $responseProperties = igbinary_unserialize(gzuncompress($serializedResponse));
+        $responseProperties = igbinary_unserialize($serializedResponse);
 
         $response = $this->buildResponse($responseProperties);
 
